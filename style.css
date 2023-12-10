@@ -27,7 +27,6 @@ nav{
     background: white;
     border-bottom: 1px solid #999;
 }
-
 .single_slider .slider_content a{
     padding: 10px 25px;
     background:transparent;
@@ -58,7 +57,6 @@ header#header {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .single_slider.slider2{
     background: linear-gradient(45deg, #00000054 , #00000054), url(img/2.jpg);
     background-position: center center;
