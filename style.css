@@ -43,6 +43,11 @@ nav{
     background: white;
     transition:all .3s
 }
+header#header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
 .single_slider {
     height: 85vh;
     padding: 0px 85px;
