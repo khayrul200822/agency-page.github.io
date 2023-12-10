@@ -12,6 +12,13 @@ a.nav-link {
     color: black;
     font-weight: 600;
     font-size: 16px;
+    padding: 10px 10px;
+}
+
+a.nav-link:hover {
+    background: black;
+    border-radius: 5px;
+    color: white !important;
 }
 a{
     text-decoration: none !important;
