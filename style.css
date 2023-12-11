@@ -132,6 +132,10 @@ section#about_section .about_content p {
     margin-top: 30px;
     margin-bottom: 50px;
 }
+.about_img img {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    object-fit: cover;
+}
 section#about_section .about_content a {
     padding: 10px 25px;
     color: black;
