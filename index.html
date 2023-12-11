@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +17,25 @@
 
 <body>
     <header id="header">
+        <div class="top_header">
+            <div class="container-fluid container-lg">
+              <div class="language-button">
+                <span>Change Language:</span>
+                <button class="active-btn" onclick=" $.MultiLanguage('language.json', 'en')">English</button>
+                <button onclick="$.MultiLanguage('language.json', 'sp')">Spanish</button>
+                <button onclick="$.MultiLanguage('language.json', 'itl')">Italian</button>
+
+            </div>  
+
+            </div>
+           
+        </div>
         <nav class="navbar navbar-expand-md">
             <div class=" contianer-fluid container-lg">
                 <a class="navbar-brand" href="#"><b>
                         <h2>Agency Website</h2>
                     </b></a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -33,17 +48,17 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item me-4">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <li data-i18n="navitem1" class="nav-item me-4">
+                                <a id="navitem1" class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
-                            <li class="nav-item me-4">
-                                <a class="nav-link" href="#service_section">Services</a>
+                            <li data-i18n="navitem2" class="nav-item me-4">
+                                <a id="navitem2" class="nav-link" href="#service_section">Services</a>
                             </li>
-                            <li class="nav-item me-4">
-                                <a class="nav-link" href="#about_section">About us</a>
+                            <li data-i18n="navitem3" class="nav-item me-4">
+                                <a id="navitem3" class="nav-link" href="#about_section">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact_section">Contact us</a>
+                                <a id="navitem4" class="nav-link" href="#contact_section">Contact us</a>
                             </li>
                         </ul>
                     </div>
@@ -67,38 +82,43 @@
                 <div class="carousel-item active">
                     <div class="single_slider slider1 d-flex align-items-center ">
                         <div class="slider_content">
-                            <h2 class="mb-4 text-center text-md-start ">Welcome to Our Company</h2>
-                            <p class="mb-5 text-center text-md-start ">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Atque facere, nihil quaerat, et cum totam dignissimos magni
-                                provident distinctio odio</p>
-                            <a href="#">Read More</a>
+                            <h2 class="hero_slider_heading" class="mb-4 text-center text-md-start ">Welcome to Our
+                                Company</h2>
+                            <p class="hero_slider_para" class="mb-5 text-center text-md-start ">A forward-thinking,
+                                Balearic-based
+                                residential real
+                                estate developer operating in prime locations across the islands of Mallorca and
+                                Ibiza.</p>
+                            <a class="hero-section-button" href="#">Read More</a>
                         </div>
-
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="single_slider slider2 d-flex align-items-center ">
                         <div class="slider_content">
-                            <h2 class="mb-4 text-center text-md-start ">Welcome to Our Company</h2>
-                            <p class="mb-5 text-center text-md-start ">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Atque facere, nihil quaerat, et cum totam dignissimos magni
-                                provident distinctio odio</p>
-                            <a href="#">Read More</a>
+                            <h2 class="hero_slider_heading" class="mb-4 text-center text-md-start ">Welcome to Our
+                                Company</h2>
+                            <p class="hero_slider_para" class="mb-5 text-center text-md-start ">A forward-thinking,
+                                Balearic-based
+                                residential real
+                                estate developer operating in prime locations across the islands of Mallorca and
+                                Ibiza.</p>
+                            <a class="hero-section-button" href="#">Read More</a>
                         </div>
-
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="single_slider slider3 d-flex align-items-center ">
                         <div class="slider_content">
-                            <h2 class="mb-4 text-center text-md-start ">Welcome to Our Company</h2>
-                            <p class="mb-5 text-center text-md-start "> a forward-thinking, Balearic-based
+                            <h2 class="hero_slider_heading" class="mb-4 text-center text-md-start ">Welcome to Our
+                                Company</h2>
+                            <p class="hero_slider_para" class="mb-5 text-center text-md-start ">A forward-thinking,
+                                Balearic-based
                                 residential real
                                 estate developer operating in prime locations across the islands of Mallorca and
                                 Ibiza.</p>
-                            <a href="#">Read More</a>
+                            <a class="hero-section-button" href="#">Read More</a>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -227,13 +247,15 @@
                 <div class="optional_info">
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-4">
-                            <div class="single_box d-flex flex-column  align-items-center justify-content-center mb-5 mb-md-0">
+                            <div
+                                class="single_box d-flex flex-column  align-items-center justify-content-center mb-5 mb-md-0">
                                 <i class="fa-solid fa-location-dot"></i>
                                 <span class="text-center">Company Office Address, City, Country</span>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-4">
-                            <div class="single_box d-flex flex-column  align-items-center justify-content-center mb-5 mb-md-0">
+                            <div
+                                class="single_box d-flex flex-column  align-items-center justify-content-center mb-5 mb-md-0">
                                 <i class="fa-solid fa-phone"></i>
                                 <span class="text-center">+12 345 678 910</span>
                             </div>
@@ -291,10 +313,17 @@
         <p class="text-center mb-0">Copyright © 2023 company. All rights reserved.</p>
     </section>
 
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script src="js/jquery.MultiLanguage.min.js"></script>
     <!-- bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

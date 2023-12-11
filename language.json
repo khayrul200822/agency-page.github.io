@@ -1,0 +1,34 @@
+{
+    "config": {
+        "default": "en"
+    },
+    "language": {
+        "en": {
+            "#navitem1": "Home",
+            "#navitem2": "Services",
+            "#navitem3": "About us",
+            "#navitem4": "Contact",
+            ".hero_slider_heading": "Welcome to Our Company",
+            ".hero_slider_para": "A forward-thinking, Balearic-based residential real estate developer operating in prime locations across the islands of Mallorca and Ibiza.",
+            ".hero-section-button": "Read More"
+        },
+        "sp": {
+            "#navitem1": "Hogar",
+            "#navitem2": "Servicios",
+            "#navitem3": "Sobre nosotros",
+            "#navitem4": "Contacto",
+            ".hero_slider_heading": "Bienvenido a nuestra empresa",
+            ".hero_slider_para": "Un promotor inmobiliario residencial con visión de futuro con sede en Baleares que opera en ubicaciones privilegiadas en las islas de Mallorca e Ibiza.",
+            ".hero-section-button": "Leer más"
+        },
+        "itl": {
+            "#navitem1": "Casa",
+            "#navitem2": "Servizi",
+            "#navitem3": "Chi siamo",
+            "#navitem4": "Contatto",
+            ".hero_slider_heading": "Benvenuti nella nostra azienda",
+            ".hero_slider_para": "Uno sviluppatore immobiliare residenziale lungimirante con sede nelle Baleari che opera in posizioni privilegiate nelle isole di Maiorca e Ibiza.",
+            ".hero-section-button": "Per saperne di più"
+        }
+    }
+}

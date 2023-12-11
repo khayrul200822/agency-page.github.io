@@ -42,6 +42,30 @@ nav{
     background: white;
     transition:all .3s
 }
+
+.language-button button {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: white;
+    font-size: 14px;
+    margin-left: 5px;
+    transition: .3s;
+}
+.active-btn{
+    border: 1px solid white !important;
+    background: black !important;
+    color: white;
+}
+.top_header {
+    padding: 10px 0px;
+    background: black;
+    color: white;
+}
+
+.language-button span {
+    font-size: 14px;
+}
 header#header {
     position: sticky;
     top: 0;
